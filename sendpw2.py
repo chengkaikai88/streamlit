@@ -1,6 +1,7 @@
 import streamlit as st
 import cv2
 import requests
+import sys
 
 def trigger_action():
     response = requests.get("http://localhost:5000/trigger")
@@ -101,6 +102,9 @@ def main():
     st.title("見守りシステム")
     username = st.sidebar.text_input("Username")
     password = st.sidebar.text_input("Password", type="password")
+
+    if "streamlit" not in sys.modules:
+        import cv2
     
     if st.sidebar.button("映像切り替えlogin"):
         if authenticate(username, password):
