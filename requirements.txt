@@ -40,7 +40,7 @@ mdurl==0.1.2
 ml-dtypes==0.2.0
 numpy==1.25.1
 oauthlib==3.2.2
-opencv-python-headless==4.5.4.60
+opencv-python-headless==4.6.0.66
 opt-einsum==3.3.0
 packaging==23.1
 pandas==2.0.3
